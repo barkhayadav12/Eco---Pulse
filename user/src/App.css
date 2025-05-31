@@ -1,0 +1,40 @@
+body{
+  background-color:  #f0f7f4;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 260px;
+  height: 100vh;
+  background-color: #ebf4f0;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  transition: right 0.3s ease;
+  z-index: 1050;
+  font-weight: bold;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar .close-btn {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  position: absolute;
+  left: 16px;
+  color: #000;
+  cursor: pointer;
+  top:5px;
+  font-weight: bold;
+}
+
+.sidebar .nav-link {
+  color: #000;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  margin-top: 30px;
+}
